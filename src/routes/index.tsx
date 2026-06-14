@@ -77,9 +77,8 @@ export const Route = createFileRoute("/")({
   component: LandingPage,
 });
 
-const CHECKOUT_URL = "https://pay.wiapy.com/5q16-c3Ety";
-const CHECKOUT_URL_COMPLETE = "https://pay.wiapy.com/_BpM2ssXSG";
-const CHECKOUT_URL_UPSELL = "https://pay.wiapy.com/jGVmo7dMgV";
+const CHECKOUT_URL = "https://pay.wiapy.com/5lQOB-QY04"; // Kit + 5 bônus — R$ 19,90
+const CHECKOUT_URL_BASIC = "https://pay.wiapy.com/Z2t2c8j9J8H"; // Plano simples (só o kit) — R$ 9,90
 
 const scrollToContent = () => {
   document.getElementById("content")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -551,11 +550,72 @@ const ContentSection = () => {
         </p>
       </div>
 
-      <div className="max-w-md mx-auto">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 items-stretch">
+        {/* PLANO SIMPLES — R$ 9,90 */}
+        <Card className="p-5 md:p-7 border-2 border-border flex flex-col">
+          <div className="text-center mb-3 mt-2">
+            <span className="inline-block bg-muted text-muted-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Plano Simples
+            </span>
+          </div>
+          <div className="flex justify-center mb-4">
+            <img
+              src="/lembrancinhas/hero.png"
+              alt="Kit com 50 Moldes de Lembrancinhas"
+              loading="lazy"
+              className="max-w-[160px] sm:max-w-[190px] h-auto rounded-md bg-muted opacity-90"
+            />
+          </div>
+          <h3 className="text-center font-display text-xl md:text-2xl font-bold text-primary mb-4">
+            Apenas o Kit
+          </h3>
+
+          <div className="space-y-2.5 mb-5 flex-1">
+            <div className="flex items-center gap-2.5">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 text-success" />
+              <p className="text-sm md:text-base text-foreground">50 Moldes de Lembrancinhas (PDF)</p>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 text-success" />
+              <p className="text-sm md:text-base text-foreground">Imprima quantas vezes quiser</p>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 text-success" />
+              <p className="text-sm md:text-base text-foreground">Acesso vitalício</p>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 text-success" />
+              <p className="text-sm md:text-base text-foreground">Garantia de 7 dias</p>
+            </div>
+            <div className="flex items-center gap-2.5 opacity-50">
+              <span className="w-5 h-5 flex-shrink-0 text-center font-bold">✕</span>
+              <p className="text-sm md:text-base text-muted-foreground line-through">Sem os 5 bônus exclusivos</p>
+            </div>
+          </div>
+
+          <div className="pt-3 mb-5 border-t">
+            <p className="text-center text-sm text-muted-foreground mt-3 mb-1">Por apenas</p>
+            <p className="text-center text-4xl md:text-5xl font-bold text-foreground mb-1">R$ 9,90</p>
+            <p className="text-center text-xs text-muted-foreground">Pagamento único</p>
+          </div>
+
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="w-full text-base font-bold gap-2 rounded-full py-6 border-2"
+          >
+            <a href={CHECKOUT_URL_BASIC} target="_blank" rel="noopener noreferrer">
+              Quero Comprar Agora
+            </a>
+          </Button>
+        </Card>
+
+        {/* PLANO COMPLETO — R$ 19,90 */}
         <Card className="p-5 md:p-7 border-2 border-accent shadow-soft relative flex flex-col">
           <div className="absolute -top-3 left-1/2 -translate-x-1/2">
             <span className="inline-block bg-destructive text-destructive-foreground text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
-              ⭐ Oferta Completa
+              ⭐ Mais Vendido
             </span>
           </div>
 
@@ -598,14 +658,10 @@ const ContentSection = () => {
             className="shiny-cta animate-pulse-gold w-full text-primary-foreground text-base md:text-lg font-bold gap-2 rounded-full py-6"
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              Quero Acessar Agora
+              Quero Comprar Agora
             </a>
           </Button>
-
-          <div className="flex items-center justify-center gap-1.5 mt-3 text-success">
-            <Lock className="w-4 h-4" />
-            <span className="text-sm font-semibold">Compra 100% segura</span>
-          </div>
+          <p className="text-center text-[12px] text-muted-foreground mt-2">+5 bônus inclusos hoje</p>
         </Card>
       </div>
 

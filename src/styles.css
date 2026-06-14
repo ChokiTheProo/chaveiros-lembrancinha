@@ -39,39 +39,39 @@
 :root {
   --radius: 0.875rem;
 
-  /* Warm cream background (a touch richer) */
+  /* Warm cream background */
   --background: hsl(38 46% 95%);
-  --foreground: hsl(24 26% 22%);
+  --foreground: hsl(25 30% 17%);
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(24 26% 22%);
+  --card-foreground: hsl(25 30% 17%);
 
-  /* Richer, deeper mocha for headings / primary */
-  --primary: hsl(25 40% 31%);
-  --primary-foreground: hsl(38 50% 97%);
+  /* Deep espresso brown for headings / primary (crisp + elegant) */
+  --primary: hsl(24 34% 24%);
+  --primary-foreground: hsl(40 52% 98%);
 
   --secondary: hsl(34 44% 89%);
-  --secondary-foreground: hsl(24 26% 22%);
+  --secondary-foreground: hsl(25 30% 17%);
 
   --muted: hsl(34 40% 90%);
-  --muted-foreground: hsl(27 22% 34%);
+  --muted-foreground: hsl(26 22% 31%);
 
-  /* Stronger bronze-gold accent */
-  --accent: hsl(36 68% 45%);
-  --accent-foreground: hsl(24 26% 20%);
+  /* Stronger bronze-gold accent for labels */
+  --accent: hsl(34 66% 40%);
+  --accent-foreground: hsl(25 30% 16%);
 
-  --success: hsl(132 44% 35%);
+  --success: hsl(132 46% 32%);
   --success-foreground: hsl(0 0% 100%);
 
-  --destructive: hsl(8 70% 50%);
-  --destructive-foreground: hsl(38 50% 98%);
+  --destructive: hsl(8 70% 48%);
+  --destructive-foreground: hsl(40 52% 98%);
 
   --gold: hsl(38 62% 54%);
   --gold-soft: hsl(40 60% 84%);
-  --navy: hsl(25 40% 31%);
+  --navy: hsl(24 34% 24%);
 
   --border: hsl(34 34% 83%);
   --input: hsl(34 34% 83%);
-  --ring: hsl(25 40% 31%);
+  --ring: hsl(24 34% 24%);
 }
 
 @layer base {
