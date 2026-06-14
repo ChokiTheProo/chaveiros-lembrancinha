@@ -71,7 +71,7 @@ export const Route = createFileRoute("/")({
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap",
       },
-      { rel: "preload", as: "image", href: productoPreview, fetchpriority: "high" } as any,
+      { rel: "preload", as: "image", href: "/lembrancinhas/hero.webp", fetchpriority: "high" } as any,
     ],
   }),
   component: LandingPage,
@@ -110,7 +110,7 @@ const HeroSection = () => (
 
         <div className="flex justify-center">
           <img
-            src="/lembrancinhas/hero.png"
+            src="/lembrancinhas/hero.webp"
             alt="Pacote com 50 Chaveiros Lembrancinhas — perfeitos para todas as ocasiões"
             loading="eager"
             decoding="async"
@@ -272,12 +272,12 @@ const ShowcaseSection = () => (
 
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-4">
           {[
-            "/lembrancinhas/edit1.png",
-            "/lembrancinhas/edit2.png",
-            "/lembrancinhas/edit3.png",
-            "/lembrancinhas/edit4.png",
-            "/lembrancinhas/edit5.png",
-            "/lembrancinhas/edit6.png",
+            "/lembrancinhas/edit1.webp",
+            "/lembrancinhas/edit2.webp",
+            "/lembrancinhas/edit3.webp",
+            "/lembrancinhas/edit4.webp",
+            "/lembrancinhas/edit5.webp",
+            "/lembrancinhas/edit6.webp",
           ].map((src, i) => (
             <img
               key={i}
@@ -560,7 +560,7 @@ const ContentSection = () => {
           </div>
           <div className="flex justify-center mb-4">
             <img
-              src="/lembrancinhas/hero.png"
+              src="/lembrancinhas/hero.webp"
               alt="Kit com 50 Moldes de Lembrancinhas"
               loading="lazy"
               className="max-w-[160px] sm:max-w-[190px] h-auto rounded-md bg-muted opacity-90"
@@ -626,7 +626,7 @@ const ContentSection = () => {
           </div>
           <div className="flex justify-center mb-4">
             <img
-              src="/lembrancinhas/hero.png"
+              src="/lembrancinhas/hero.webp"
               alt="Kit com 50 Moldes de Lembrancinhas + Bônus"
               loading="lazy"
               className="max-w-[180px] sm:max-w-[220px] h-auto rounded-md bg-muted"
