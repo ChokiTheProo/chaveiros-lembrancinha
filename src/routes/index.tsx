@@ -402,7 +402,7 @@ const WhatYouReceiveSection = () => (
               <Card key={i} className="p-4 sm:p-5 hover:shadow-soft transition-smooth border-2">
                 <div className="flex items-start gap-4">
                   <div className="icon-tile w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <bonus.icon className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.25} style={{ color: "hsl(40 90% 75%)" }} />
+                    <bonus.icon className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.25} style={{ color: "hsl(200 85% 80%)" }} />
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-sm font-extrabold uppercase tracking-widest text-accent mb-1">{bonus.number}</p>

@@ -39,39 +39,39 @@
 :root {
   --radius: 0.875rem;
 
-  /* Warm cream background */
-  --background: hsl(38 46% 95%);
-  --foreground: hsl(25 30% 17%);
+  /* Soft light-blue background */
+  --background: hsl(205 56% 97%);
+  --foreground: hsl(214 46% 19%);
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(25 30% 17%);
+  --card-foreground: hsl(214 46% 19%);
 
-  /* Deep espresso brown for headings / primary (crisp + elegant) */
-  --primary: hsl(24 34% 24%);
-  --primary-foreground: hsl(40 52% 98%);
+  /* Deep blue for headings / primary (crisp + elegant) */
+  --primary: hsl(212 58% 33%);
+  --primary-foreground: hsl(205 56% 98%);
 
-  --secondary: hsl(34 44% 89%);
-  --secondary-foreground: hsl(25 30% 17%);
+  --secondary: hsl(207 48% 92%);
+  --secondary-foreground: hsl(214 46% 19%);
 
-  --muted: hsl(34 40% 90%);
-  --muted-foreground: hsl(26 22% 31%);
+  --muted: hsl(207 46% 93%);
+  --muted-foreground: hsl(213 28% 36%);
 
-  /* Stronger bronze-gold accent for labels */
-  --accent: hsl(34 66% 40%);
-  --accent-foreground: hsl(25 30% 16%);
+  /* Readable medium blue accent for labels */
+  --accent: hsl(208 72% 42%);
+  --accent-foreground: hsl(214 48% 22%);
 
-  --success: hsl(132 46% 32%);
+  --success: hsl(150 48% 34%);
   --success-foreground: hsl(0 0% 100%);
 
-  --destructive: hsl(8 70% 48%);
-  --destructive-foreground: hsl(40 52% 98%);
+  --destructive: hsl(8 70% 50%);
+  --destructive-foreground: hsl(205 56% 98%);
 
-  --gold: hsl(38 62% 54%);
-  --gold-soft: hsl(40 60% 84%);
-  --navy: hsl(24 34% 24%);
+  --gold: hsl(205 78% 50%);
+  --gold-soft: hsl(205 62% 88%);
+  --navy: hsl(212 58% 33%);
 
-  --border: hsl(34 34% 83%);
-  --input: hsl(34 34% 83%);
-  --ring: hsl(24 34% 24%);
+  --border: hsl(207 38% 85%);
+  --input: hsl(207 38% 85%);
+  --ring: hsl(212 58% 33%);
 }
 
 @layer base {
@@ -93,19 +93,19 @@
   .text-balance { text-wrap: balance; }
 
   .bg-gradient-gold-strong {
-    background: linear-gradient(180deg, hsl(40 56% 64%) 0%, hsl(34 50% 50%) 100%);
+    background: linear-gradient(180deg, hsl(208 72% 52%) 0%, hsl(214 64% 42%) 100%);
   }
   .bg-gradient-sky {
-    background: linear-gradient(180deg, hsl(38 45% 96%) 0%, hsl(36 38% 91%) 100%);
+    background: linear-gradient(180deg, hsl(205 60% 97%) 0%, hsl(208 52% 92%) 100%);
   }
-  .shadow-soft { box-shadow: 0 8px 30px -8px hsl(30 22% 50% / 0.14); }
-  .shadow-card { box-shadow: 0 4px 20px -4px hsl(30 22% 50% / 0.12); }
+  .shadow-soft { box-shadow: 0 8px 30px -8px hsl(214 50% 35% / 0.16); }
+  .shadow-card { box-shadow: 0 4px 20px -4px hsl(214 50% 35% / 0.13); }
   .transition-smooth { transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); }
 }
 
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 0 0 hsl(38 50% 60% / 0.5); }
-  50% { box-shadow: 0 0 0 18px hsl(38 50% 60% / 0); }
+  0%, 100% { box-shadow: 0 0 0 0 hsl(205 72% 50% / 0.5); }
+  50% { box-shadow: 0 0 0 18px hsl(205 72% 50% / 0); }
 }
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(20px); }
@@ -130,38 +130,38 @@
   position: relative;
   isolation: isolate;
   background:
-    linear-gradient(180deg, hsl(40 70% 52%) 0%, hsl(33 66% 41%) 100%) padding-box,
+    linear-gradient(180deg, hsl(208 74% 50%) 0%, hsl(214 68% 39%) 100%) padding-box,
     conic-gradient(
       from var(--gradient-angle),
       transparent 0%,
-      hsl(44 85% 72%) 5%,
-      hsl(40 80% 62%) 15%,
-      hsl(44 85% 76%) 30%,
+      hsl(200 90% 74%) 5%,
+      hsl(205 85% 64%) 15%,
+      hsl(200 90% 78%) 30%,
       transparent 40%,
       transparent 100%
     ) border-box;
   border: 2px solid transparent;
   animation: border-spin 3s linear infinite;
   box-shadow:
-    0 14px 34px -12px hsl(36 50% 50% / 0.6),
-    inset 0 1px 0 hsl(42 75% 82% / 0.55);
+    0 14px 34px -12px hsl(212 60% 42% / 0.6),
+    inset 0 1px 0 hsl(200 90% 85% / 0.55);
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 .shiny-cta:hover {
   transform: translateY(-2px) scale(1.02);
   filter: brightness(1.06);
   box-shadow:
-    0 20px 40px -12px hsl(36 50% 50% / 0.75),
-    inset 0 1px 0 hsl(42 75% 82% / 0.65);
+    0 20px 40px -12px hsl(212 60% 42% / 0.75),
+    inset 0 1px 0 hsl(200 90% 85% / 0.65);
 }
 
 .icon-tile {
   position: relative;
-  background: linear-gradient(140deg, hsl(28 38% 44%), hsl(25 44% 32%));
+  background: linear-gradient(140deg, hsl(210 56% 44%), hsl(214 62% 31%));
   box-shadow:
-    inset 0 1px 0 hsl(42 75% 80% / 0.4),
-    0 10px 26px -10px hsl(25 40% 30% / 0.6),
-    0 0 0 1px hsl(36 65% 50% / 0.5);
+    inset 0 1px 0 hsl(200 85% 80% / 0.4),
+    0 10px 26px -10px hsl(214 50% 28% / 0.6),
+    0 0 0 1px hsl(205 70% 50% / 0.5);
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
 }
 .icon-tile::after {
@@ -169,23 +169,23 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: radial-gradient(120% 80% at 50% 0%, hsl(42 70% 78% / 0.35), transparent 60%);
+  background: radial-gradient(120% 80% at 50% 0%, hsl(200 85% 72% / 0.35), transparent 60%);
   pointer-events: none;
 }
 .icon-tile:hover {
   transform: translateY(-3px) scale(1.04);
   box-shadow:
-    inset 0 1px 0 hsl(42 70% 80% / 0.45),
-    0 16px 34px -10px hsl(38 50% 58% / 0.5),
-    0 0 0 1px hsl(38 50% 60% / 0.55);
+    inset 0 1px 0 hsl(200 85% 80% / 0.45),
+    0 16px 34px -10px hsl(208 60% 46% / 0.5),
+    0 0 0 1px hsl(205 70% 52% / 0.55);
 }
 
 .icon-tile-soft {
-  background: linear-gradient(140deg, hsl(40 60% 93%), hsl(40 55% 83%));
+  background: linear-gradient(140deg, hsl(205 65% 93%), hsl(208 58% 83%));
   box-shadow:
     inset 0 1px 0 hsl(0 0% 100% / 0.8),
-    0 6px 18px -8px hsl(38 50% 58% / 0.45),
-    0 0 0 1px hsl(38 50% 60% / 0.35);
+    0 6px 18px -8px hsl(208 60% 46% / 0.45),
+    0 0 0 1px hsl(205 65% 52% / 0.35);
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
 }
 .icon-tile-soft:hover {
