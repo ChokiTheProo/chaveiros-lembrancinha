@@ -12,4 +12,6 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  // Build voltado para a Vercel (em vez de Cloudflare).
+  nitro: { preset: "vercel" },
 });
