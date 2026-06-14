@@ -59,22 +59,22 @@
 
   /* Soft light-blue background */
   --background: hsl(205 56% 97%);
-  --foreground: hsl(214 46% 19%);
+  --foreground: hsl(216 50% 16%);
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(214 46% 19%);
+  --card-foreground: hsl(216 50% 16%);
 
   /* Deep blue for headings / primary (crisp + elegant) */
-  --primary: hsl(212 58% 33%);
+  --primary: hsl(215 62% 26%);
   --primary-foreground: hsl(205 56% 98%);
 
   --secondary: hsl(207 48% 92%);
-  --secondary-foreground: hsl(214 46% 19%);
+  --secondary-foreground: hsl(216 50% 16%);
 
   --muted: hsl(207 46% 93%);
   --muted-foreground: hsl(213 28% 36%);
 
   /* Readable medium blue accent for labels */
-  --accent: hsl(208 72% 42%);
+  --accent: hsl(202 88% 43%);
   --accent-foreground: hsl(214 48% 22%);
 
   --success: hsl(150 48% 34%);
@@ -83,13 +83,13 @@
   --destructive: hsl(8 70% 50%);
   --destructive-foreground: hsl(205 56% 98%);
 
-  --gold: hsl(205 78% 50%);
-  --gold-soft: hsl(205 62% 88%);
-  --navy: hsl(212 58% 33%);
+  --gold: hsl(202 90% 52%);
+  --gold-soft: hsl(204 70% 88%);
+  --navy: hsl(215 62% 26%);
 
   --border: hsl(207 38% 85%);
   --input: hsl(207 38% 85%);
-  --ring: hsl(212 58% 33%);
+  --ring: hsl(215 62% 26%);
 }
 
 @layer base {
@@ -122,8 +122,8 @@
 }
 
 @keyframes pulse-gold {
-  0%, 100% { box-shadow: 0 0 0 0 hsl(205 72% 50% / 0.5); }
-  50% { box-shadow: 0 0 0 18px hsl(205 72% 50% / 0); }
+  0%, 100% { box-shadow: 0 0 0 0 hsl(202 88% 52% / 0.5); }
+  50% { box-shadow: 0 0 0 18px hsl(202 88% 52% / 0); }
 }
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(20px); }
@@ -148,7 +148,7 @@
   position: relative;
   isolation: isolate;
   background:
-    linear-gradient(180deg, hsl(208 74% 50%) 0%, hsl(214 68% 39%) 100%) padding-box,
+    linear-gradient(180deg, hsl(202 92% 50%) 0%, hsl(208 90% 39%) 100%) padding-box,
     conic-gradient(
       from var(--gradient-angle),
       transparent 0%,
