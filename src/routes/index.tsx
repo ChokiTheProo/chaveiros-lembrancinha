@@ -65,12 +65,8 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: productoPreview },
     ],
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap",
-      },
+      { rel: "preload", as: "font", href: "/fonts/inter-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" } as any,
+      { rel: "preload", as: "font", href: "/fonts/playfair-latin.woff2", type: "font/woff2", crossOrigin: "anonymous" } as any,
       { rel: "preload", as: "image", href: "/lembrancinhas/hero.webp", fetchpriority: "high" } as any,
     ],
   }),
