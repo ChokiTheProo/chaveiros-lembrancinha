@@ -99,9 +99,7 @@ const HeroSection = () => (
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto text-center space-y-3 md:space-y-4">
         <h1 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-primary mb-2 text-balance">
-          Transforme Papel em{" "}
-          <span className="text-accent">Lembrancinhas Encantadoras</span> com Este Kit Exclusivo
-          de 50 Moldes Prontos para Imprimir
+          Faça <span className="text-accent">Lembrancinhas Encantadoras</span> com Esse Kit Exclusivo
         </h1>
 
         <div className="flex justify-center">
