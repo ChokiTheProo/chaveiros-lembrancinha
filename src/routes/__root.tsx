@@ -111,7 +111,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.pixelId = "6a0e4f572a7f4e922839cffc";
+            __html: `window.pixelId = "6a35c92c5e3ab6309df765dc";
 var a = document.createElement("script");
 a.setAttribute("async", "");
 a.setAttribute("defer", "");
