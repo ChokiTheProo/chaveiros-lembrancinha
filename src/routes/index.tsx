@@ -600,7 +600,7 @@ const ContentSection = () => {
             className="w-full text-base font-bold gap-2 rounded-full py-6 border-2"
           >
             <a href={CHECKOUT_URL_BASIC} target="_blank" rel="noopener noreferrer">
-              Quero Comprar Agora
+              Comprar Agora
             </a>
           </Button>
         </Card>
@@ -652,7 +652,7 @@ const ContentSection = () => {
             className="shiny-cta animate-pulse-gold w-full text-primary-foreground text-base md:text-lg font-bold gap-2 rounded-full py-6"
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              Quero Comprar Agora
+              Comprar Agora
             </a>
           </Button>
           <p className="text-center text-[12px] text-muted-foreground mt-2">+5 bônus inclusos hoje</p>
